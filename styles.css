@@ -16,7 +16,7 @@ html {
 .form-container {
   padding: 5px;
   padding-left: 20px;
-  height: 630px;
+  height: 660px;
   width: 400px;
   margin-left: 20px;
   margin-top: 70px;
@@ -48,16 +48,29 @@ input[type=text],input[type=password],input[type=date] ,input[type=tel],input[ty
  width: 70%;
  height: 25px;
 }
+
 .submit-button{
     border: none;
-    height: 30px;
-    width: 75px;
+    height: 40px;
+    width: 100px;
     cursor: pointer;
-    background-image: linear-gradient(to right, #ccff668f ,  #14a30a8f);
+    color: white;
+    background-image: linear-gradient(to right, #B5C77E ,  #7D9F45);
     font-family: 'Raleway', sans-serif;
     
 
 }
 .submit-button:hover{
-    background-image: linear-gradient(to right, #ccff66 ,  #14a30a);
+    background-image: linear-gradient(to right, #00b852 ,  #006600);
+}
+select,option
+{
+    background-color: #f1f1f1;
+    padding:5px;
+    margin: 5px;
+    font-family: 'Raleway', sans-serif;
+    width: 70%;
+    height: 30px; 
+    border: none;
+    outline: none;  
 }
