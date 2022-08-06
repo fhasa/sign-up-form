@@ -1,32 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <main>
-        <p>hi this is amain</p>
-        <form>
-            <input type="text" placeholder="Full Name" required />
-            <input type="email" placeholder="Email" required>
-            <input type="password" placeholder="Password">
-            <input type="number" placeholder="Phone Number" required>
-            <input type="date" placeholder="date of birth">
-            <input type="list">
-            <input type="radio"> Free
-            <input type="radio"> Pro
-            <input type="checkbox"> I agree to terms and conditions 
-            <button action="submit"> submit</button>
-        </form>
-    </main>
-    <section>
-        <h1>this is section</h1>
-    </section>
-</body>
+      <p>SignUp Form</p>
+      
+      <form>
 
+        <!-- Full name Input-->
+        <label for="name"><b>Name</b></label>
+        <input type="text" placeholder="Full Name" required />
+      
+        <!-- Email Input-->
+        <label for="Email"><b>Email</b></label>
+        <input type="email" placeholder="Email" required />
+
+        <!-- password Input-->
+        <label for="password"><b>password</b></label>
+        <input type="password" placeholder="Password"  required minlength="8"/>
+
+        <!--number  Input-->
+        <label for="phoneNumber"><b>Phone Number</b></label>
+        <input type="tel" placeholder="Phone Number" required pattern="[0-9]{9}"/>
+
+        <!--date of birth  Input-->
+        <label for="dateofBirth"><b>date of birth</b></label>
+        <input type="date" placeholder="date of birth" />
+
+        <!--  countries list-->
+        <label for="Country"><b>Country</b></label>
+        <input type="list" />
+
+        <!--plan type Input-->
+        <label for="plan"><b>Plan</b></label>
+        <input type="radio" name="contact" required/> Free <input type="radio" name="contact" required/> Pro
+
+        <!-- terms and conditions Input-->
+        <label for="termsCond"><b>Terms and conditions</b></label>
+        <input type="checkbox" required/> I agree to terms and conditions
+        
+        
+        <button action="submit">submit</button>
+      
+    </form>
+    </main>
+   
+  </body>
 </html>
