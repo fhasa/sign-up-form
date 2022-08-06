@@ -15,23 +15,23 @@
 
         <!-- Full name Input-->
         <label for="name"><b>Name</b></label>
-        <input type="text" placeholder="Full Name" required />
+        <input type="text" placeholder="Full Name" name="fullName" required />
       
         <!-- Email Input-->
         <label for="Email"><b>Email</b></label>
-        <input type="email" placeholder="Email" required />
+        <input type="email" placeholder="Email" name="email"  required />
 
         <!-- password Input-->
         <label for="password"><b>password</b></label>
-        <input type="password" placeholder="Password"  required minlength="8"/>
+        <input type="password" placeholder="Password" name="password"  required minlength="8"/>
 
         <!--number  Input-->
         <label for="phoneNumber"><b>Phone Number</b></label>
-        <input type="tel" placeholder="Phone Number" required pattern="[0-9]{9}"/>
+        <input type="tel" placeholder="Phone Number" name="phoneNumber"  required pattern="[0-9]{9}"/>
 
         <!--date of birth  Input-->
         <label for="dateofBirth"><b>date of birth</b></label>
-        <input type="date" placeholder="date of birth" />
+        <input type="date" placeholder="date of birth" name="DOB"  />
 
         <!--  countries list-->
         <label for="Country"><b>Country</b></label>
@@ -39,11 +39,11 @@
 
         <!--plan type Input-->
         <label for="plan"><b>Plan</b></label>
-        <input type="radio" name="contact" required/> Free <input type="radio" name="contact" required/> Pro
+        <input type="radio" name="plan" required /> Free <input type="radio" name="plan" required/> Pro
 
         <!-- terms and conditions Input-->
         <label for="termsCond"><b>Terms and conditions</b></label>
-        <input type="checkbox" required/> I agree to terms and conditions
+        <input type="checkbox"  name="agreed" required/> I agree to terms and conditions
         
         
         <button action="submit">submit</button>
