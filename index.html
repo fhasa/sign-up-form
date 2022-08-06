@@ -10,46 +10,75 @@
   <body>
     <main>
       <p>SignUp Form</p>
-      
-      <form>
 
+      <form>
         <!-- Full name Input-->
         <label for="name"><b>Name</b></label>
         <input type="text" placeholder="Full Name" name="fullName" required />
-      
+
         <!-- Email Input-->
         <label for="Email"><b>Email</b></label>
-        <input type="email" placeholder="Email" name="email"  required />
+        <input type="email" placeholder="Email" name="email" required />
 
         <!-- password Input-->
         <label for="password"><b>password</b></label>
-        <input type="password" placeholder="Password" name="password"  required minlength="8"/>
+        <input
+          type="password"
+          placeholder="Password"
+          name="password"
+          required
+          minlength="8"
+        />
 
         <!--number  Input-->
         <label for="phoneNumber"><b>Phone Number</b></label>
-        <input type="tel" placeholder="Phone Number" name="phoneNumber"  required pattern="[0-9]{9}"/>
+        <input
+          type="tel"
+          placeholder="Phone Number"
+          name="phoneNumber"
+          required
+          pattern="[0-9]{9}"
+        />
 
         <!--date of birth  Input-->
         <label for="dateofBirth"><b>date of birth</b></label>
-        <input type="date" placeholder="date of birth" name="DOB"  />
+        <input type="date" placeholder="date of birth" name="DOB" />
 
         <!--  countries list-->
         <label for="Country"><b>Country</b></label>
-        <input type="list" />
+        <select name="countries" id="countries" required>
+          <option value="Algeria">Algeria</option>
+          <option value="Bahrain">Bahrain</option>
+          <option value="Egypt">Egypt</option>
+          <option value="Iran">Iran</option>
+          <option value="Iraq">Iraq</option>
+          <option value="Palestine">Palestine</option>
+          <option value="Jordan">Jordan</option>
+          <option value="Kuwait">Kuwait</option>
+          <option value="Lebanon">Lebanon</option>
+          <option value="Libya">Libya</option>
+          <option value="Morocco">Morocco</option>
+          <option value="Oman">Oman</option>
+          <option value="Qatar">Qatar</option>
+          <option value="Saudi Arabia">Saudi Arabia</option>
+          <option value="Syria">Syria</option>
+          <option value="Tunisia">Tunisia</option>
+          <option value="United Arab Emirates ">United Arab Emirates</option>
+          <option value="Yemen">Yemen</option>
+        </select>
 
         <!--plan type Input-->
         <label for="plan"><b>Plan</b></label>
-        <input type="radio" name="plan" required /> Free <input type="radio" name="plan" required/> Pro
+        <input type="radio" name="plan" required /> Free
+        <input type="radio" name="plan" required /> Pro
 
         <!-- terms and conditions Input-->
         <label for="termsCond"><b>Terms and conditions</b></label>
-        <input type="checkbox"  name="agreed" required/> I agree to terms and conditions
-        
-        
+        <input type="checkbox" name="agreed" required /> I agree to terms and
+        conditions
+
         <button action="submit">submit</button>
-      
-    </form>
+      </form>
     </main>
-   
   </body>
 </html>
