@@ -1,22 +1,35 @@
-.pp{
-    color: rgba(189, 24, 24, 0.867);
+html {
+  height: 150vh;
+  padding: 0px;
+  margin: 0px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./forest.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 
-.Input-container{
-    display: flex;
-    flex-direction: column;
-    margin: 8px;
+.pp {
+  color: rgba(189, 24, 24, 0.867);
 }
-Input-container-radio{
-    display: flex;
-    flex-direction: row;   
+
+.Input-container {
+  display: flex;
+  flex-direction: column;
+  margin: 8px;
 }
-.form-container{
-    padding: 5px;
-    height: 800px;
-    width: 400px;
+.Input-container-radio {
+  display: flex;
+  flex-direction: row;
 }
-/* .Input-container input{
-    width: 20%;
-    outline: none;
-} */
+.form-container {
+  padding: 5px;
+  height: 800px;
+  width: 400px;
+  background-color: rgba(255, 255, 255, 0.568);
+}
+input {
+  border: none;
+  outline: none;
+}

@@ -9,96 +9,105 @@
   </head>
 
   <body>
-    <main class="form-container">
+    <main>
+        <div class="ba"></div>
+      <div class="form-container">
+        <p>SignUp Form</p>
 
-      <p>SignUp Form</p>
+        <form>
+          <!-- Full name Input-->
+          <div class="Input-container">
+            <label for="name" class="pp"><b>Name</b></label>
+            <input
+              type="text"
+              placeholder="Full Name"
+              name="fullName"
+              required
+            />
+          </div>
 
-      <form>
-        <!-- Full name Input-->
-        <div class="Input-container">
-          <label for="name" class="pp"><b>Name</b></label>
-          <input type="text" placeholder="Full Name" name="fullName" required />
-        </div>
+          <!-- Email Input-->
+          <div class="Input-container">
+            <label for="Email"><b>Email</b></label>
+            <input type="email" placeholder="Email" name="email" required />
+          </div>
 
-        <!-- Email Input-->
-        <div class="Input-container">
-          <label for="Email"><b>Email</b></label>
-          <input type="email" placeholder="Email" name="email" required />
-        </div>
+          <!-- password Input-->
+          <div class="Input-container">
+            <label for="password"><b>password</b></label>
+            <input
+              type="password"
+              placeholder="Password"
+              name="password"
+              required
+              minlength="8"
+            />
+          </div>
 
-        <!-- password Input-->
-        <div class="Input-container">
-          <label for="password"><b>password</b></label>
-          <input
-            type="password"
-            placeholder="Password"
-            name="password"
-            required
-            minlength="8"
-          />
-        </div>
+          <!--number  Input-->
+          <div class="Input-container">
+            <label for="phoneNumber"><b>Phone Number</b></label>
+            <input
+              type="tel"
+              placeholder="Phone Number"
+              name="phoneNumber"
+              required
+              pattern="[0-9]{9}"
+            />
+          </div>
 
-        <!--number  Input-->
-        <div class="Input-container">
-          <label for="phoneNumber"><b>Phone Number</b></label>
-          <input
-            type="tel"
-            placeholder="Phone Number"
-            name="phoneNumber"
-            required
-            pattern="[0-9]{9}"
-          />
-        </div>
+          <!--date of birth  Input-->
+          <div class="Input-container">
+            <label for="dateofBirth"><b>date of birth</b></label>
+            <input type="date" placeholder="date of birth" name="DOB" />
+          </div>
 
-        <!--date of birth  Input-->
-        <div class="Input-container">
-          <label for="dateofBirth"><b>date of birth</b></label>
-          <input type="date" placeholder="date of birth" name="DOB" />
-        </div>
+          <!--  countries list-->
+          <div class="Input-container">
+            <label for="Country"><b>Country</b></label>
+            <select name="countries" id="countries" required>
+              <option value="Algeria">Algeria</option>
+              <option value="Bahrain">Bahrain</option>
+              <option value="Egypt">Egypt</option>
+              <option value="Iran">Iran</option>
+              <option value="Iraq">Iraq</option>
+              <option value="Palestine">Palestine</option>
+              <option value="Jordan">Jordan</option>
+              <option value="Kuwait">Kuwait</option>
+              <option value="Lebanon">Lebanon</option>
+              <option value="Libya">Libya</option>
+              <option value="Morocco">Morocco</option>
+              <option value="Oman">Oman</option>
+              <option value="Qatar">Qatar</option>
+              <option value="Saudi Arabia">Saudi Arabia</option>
+              <option value="Syria">Syria</option>
+              <option value="Tunisia">Tunisia</option>
+              <option value="United Arab Emirates ">
+                United Arab Emirates
+              </option>
+              <option value="Yemen">Yemen</option>
+            </select>
+          </div>
 
-        <!--  countries list-->
-        <div class="Input-container">
-          <label for="Country"><b>Country</b></label>
-          <select name="countries" id="countries" required>
-            <option value="Algeria">Algeria</option>
-            <option value="Bahrain">Bahrain</option>
-            <option value="Egypt">Egypt</option>
-            <option value="Iran">Iran</option>
-            <option value="Iraq">Iraq</option>
-            <option value="Palestine">Palestine</option>
-            <option value="Jordan">Jordan</option>
-            <option value="Kuwait">Kuwait</option>
-            <option value="Lebanon">Lebanon</option>
-            <option value="Libya">Libya</option>
-            <option value="Morocco">Morocco</option>
-            <option value="Oman">Oman</option>
-            <option value="Qatar">Qatar</option>
-            <option value="Saudi Arabia">Saudi Arabia</option>
-            <option value="Syria">Syria</option>
-            <option value="Tunisia">Tunisia</option>
-            <option value="United Arab Emirates ">United Arab Emirates</option>
-            <option value="Yemen">Yemen</option>
-          </select>
-        </div>
+          <!--plan type Input-->
+          <div class="Input-container-radio-check">
+            <label for="plan"><b>Plan</b></label>
+            <br />
+            <input type="radio" name="plan" required /> Free
+            <input type="radio" name="plan" required /> Pro
+          </div>
 
-        <!--plan type Input-->
-        <div class="Input-container-radio-check">
-          <label for="plan"><b>Plan</b></label>
-          <br>
-          <input type="radio" name="plan" required /> Free
-          <input type="radio" name="plan" required /> Pro
-        </div>
+          <!-- terms and conditions Input-->
+          <div class="Input-container-radio-check">
+            <label for="termsCond"><b>Terms and conditions</b></label>
+            <br />
+            <input type="checkbox" name="agreed" required /> I agree to terms
+            and conditions
+          </div>
 
-        <!-- terms and conditions Input-->
-        <div class="Input-container-radio-check">
-          <label for="termsCond"><b>Terms and conditions</b></label>
-          <br>
-          <input type="checkbox" name="agreed" required /> I agree to terms and
-          conditions
-        </div>
-
-        <button action="submit">submit</button>
-      </form>
+          <button action="submit">submit</button>
+        </form>
+      </div>
     </main>
   </body>
 </html>
