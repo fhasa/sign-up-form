@@ -1,18 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
 html {
   height: 150vh;
   padding: 0px;
   margin: 0px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("./forest.jpg");
+    url("./forest2.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  font-family: 'Raleway', sans-serif;
 }
 
-.pp {
-  color: rgba(189, 24, 24, 0.867);
-}
 
 .Input-container {
   display: flex;
@@ -20,16 +20,35 @@ html {
   margin: 8px;
 }
 .Input-container-radio {
-  display: flex;
-  flex-direction: row;
+
+  margin: 8px;
 }
 .form-container {
   padding: 5px;
-  height: 800px;
+  height: 600px;
   width: 400px;
+  margin-left: 20px;
+  margin-top: 70px;
   background-color: rgba(255, 255, 255, 0.568);
 }
 input {
   border: none;
   outline: none;
+}
+
+input[type=text],input[type=password],input[type=date] ,input[type=tel],input[type=email]{
+ background-color: #f1f1f1;
+ padding:5px;
+ margin: 5px;
+ font-family: 'Raleway', sans-serif;
+}
+.submit-button{
+    border: none;
+    height: 30px;
+    width: 75px;
+    cursor: pointer;
+    background-image: linear-gradient(to right, #ccff668f ,  #14a30a8f);
+}
+.submit-button:hover{
+    background-image: linear-gradient(to right, #ccff66 ,  #14a30a);
 }
