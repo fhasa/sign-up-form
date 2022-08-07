@@ -10,11 +10,10 @@
 
   <body>
     <main>
-        
       <div class="form-container">
         <h1>SignUp Form</h1>
 
-        <form>
+        <form action="https://formspree.io/">
           <!-- Full name Input-->
           <div class="Input-container">
             <label for="name" class="pp"><b>Name</b></label>
@@ -44,15 +43,18 @@
             />
           </div>
 
-          <!--number  Input-->
+          <!-- phone number  Input-->
           <div class="Input-container">
-            <label for="phoneNumber"><b>Phone Number</b></label>
+            <div class="note-container">
+              <label for="phoneNumber"><b>Phone Number</b></label>
+              <label class="note">( must be 7 numbers at least from 0-9)</label>
+            </div>
             <input
               type="tel"
               placeholder="Phone Number"
               name="phoneNumber"
               required
-              pattern="[0-9]{9}"
+              pattern="[0-9]{7,}"
             />
           </div>
 
